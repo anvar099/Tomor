@@ -1,0 +1,157 @@
+.nav {
+  width: 100%;
+  height: 136px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 40px 2% 0 2%;
+  padding-top: 40px;
+}
+.nav__check {
+  display: none;
+}
+.nav__bar {
+  position: absolute;
+  bottom: 23px;
+  right: 50%;
+  transform: translate(50%);
+}
+.nav__logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.nav__hamburger {
+  display: none;
+  cursor: pointer;
+}
+.nav__search {
+  margin-top: -10px;
+}
+.nav__search-input {
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 11px 0;
+  width: 180px;
+}
+
+.nav__search-input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.nav__links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav__item a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+.nav__item:not(:last-child) {
+  margin-right: 2rem;
+}
+.navbar__icon {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2%;
+    height: 48px;
+  }
+  .nav__hamburger {
+    display: block;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 9999;
+    left: 2%;
+  }
+  .navbar__icon {
+    gap: 16px;
+  }
+  .nav__item a {
+    font-size: 12px;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-right: 0;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .nav__check:checked ~ .nav__bar {
+    transform: translateX(0);
+  }
+  .nav__bar {
+    background-color: white;
+    justify-content: center;
+    z-index: 9999;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    width: 70vw;
+    max-width: 400px;
+    margin: 0;
+    transform: translateX(100vw);
+    transition: transform 0.3s ease;
+    display: flex;
+    text-align: center;
+  }
+  .nav__item {
+    margin-top: 30px;
+  }
+  .nav__layer-blur {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    backdrop-filter: blur(8px);
+    background-color: #0002;
+    transition: opacity 0.3s ease;
+  }
+  .nav__check:checked ~ .nav__layer-blur {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo__img {
+    width: 87px;
+  }
+  .navbar__icon {
+    margin: 0;
+  }
+  .nav__search {
+    display: none;
+  }
+  .navbar__icon--like,
+  .navbar__icon--account {
+    display: none;
+  }
+}
