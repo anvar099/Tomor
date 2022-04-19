@@ -4,7 +4,7 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  padding: 40px 2% 0 2%;
+  padding: 40px 4% 0 4%;
   padding-top: 40px;
 }
 .nav__check {
@@ -75,7 +75,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 2%;
+    padding: 0 4%;
     height: 48px;
   }
   .nav__hamburger {
@@ -83,7 +83,7 @@
     text-transform: uppercase;
     position: absolute;
     z-index: 9999;
-    left: 2%;
+    left: 4%;
   }
   .navbar__icon {
     gap: 16px;
