@@ -143,7 +143,7 @@
 .slick-dots li {
   list-style: none;
 }
-button.slick-prev.slick-arrow {
+.new-products__row .slick-prev.slick-arrow {
   display: none !important;
 }
 .new-product__text-cart {
@@ -202,14 +202,11 @@ button.slick-prev.slick-arrow {
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: 2px solid red;
   padding: 0 40px;
 }
 .new-products__row {
-  border: 2px solid green;
   overflow-x: hidden;
   grid-column: 2 / -1;
-  
 }
 .new-product__name {
   font-family: "Montserrat";
@@ -242,23 +239,262 @@ button.slick-prev.slick-arrow {
   right: 40px;
   top: 50%;
 }
-/* @media (max-width: 1200px) {
-  .text-cart__title {
-    font-size: 3vw;
-  }
-}
-@media (max-width: 992px) {
-  .new-products__row {
-    margin: 0 4%;
-  }
-}
+
 @media (max-width: 1200px) {
-  .text-cart__title {
-    font-size: 27px;
+  .text-cart__text {
+    margin-bottom: 50px;
   }
-} */
+  .new-product__text-cart {
+    padding: 40px 0;
+  }
+}
 @media (max-width: 992px) {
+  .new-products {
+    padding: 0 4%;
+  }
   .product__next-arrow {
     right: 4%;
   }
+  .text-cart__text {
+    margin-bottom: 50px;
+  }
+  .text-cart__title {
+    font-size: 32px;
+    width: 70%;
+  }
+  .new-product__text-cart {
+    width: 280px;
+    padding: 0;
+  }
+}
+@media (max-width: 592px) {
+  .text-cart__title {
+    font-size: 27px;
+    width: 100%;
+    margin: 9px 0 18px 0;
+  }
+  .new-product__text-cart {
+    width: 167px;
+  }
+  .text-cart__text {
+    margin-bottom: 20px;
+  }
+}
+
+.best-sellers__row {
+  display: flex;
+  margin: 80px 160px;
+}
+.best-sellers__banner {
+  width: 50%;
+}
+.best-sellers__subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+.best-sellers__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  margin-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+.best-sellers__img-parent {
+  max-width: 445px;
+  margin-right: 100px;
+}
+.best-sellers__img {
+  width: 100%;
+}
+.best-sellers__text-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.best-sellers__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+}
+.best-sellers__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-decoration: none;
+  color: #000000;
+}
+@media(max-width: 1200px) {
+  .best-sellers__name {
+    font-size: 22px;
+  }
+  .best-sellers__link {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .best-sellers__btn-parent img{
+    display: none;
+  }
+  .best-sellers__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 992px) {
+  .best-sellers__row {
+    flex-direction: column;
+    margin: 40px 4%;
+  }
+  .best-sellers__banner {
+    width: 100%;
+  }
+  .best-sellers__img-parent {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+  .best-sellers__img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+  .best-sellers__title {
+    margin-bottom: 15px;
+  }
+  .best-sellers__btn-parent img{
+    display: block;
+  }
+  .best-sellers__btn-parent {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .best-sellers__title {
+    font-size: 34px;
+  }
+  .best-sellers__img {
+    height: 50vh;
+  }
+  .best-sellers__name {
+    font-size: 25px;
+  }
+  .best-sellers__subtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 592px) {
+  .best-sellers__title {
+    font-size: 32px;
+  }
+  .best-sellers__img {
+    height: 100%;
+  }
+  .best-sellers__name {
+    font-size: 20px;
+  }
+  .best-sellers__subtitle {
+    font-size: 16px;
+  }
+}
+
+.mission {
+  background: #FFF5EB;
+  padding: 50px 155px 75px 155px;
+}
+.mission__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mission__title {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+letter-spacing: 0.205em;
+text-transform: uppercase;
+margin-bottom: 9px;
+}
+.mission__text {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+width: 70%;
+}
+.mission__link {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 160%;
+color: black;
+text-decoration: none;
+margin-right: 10px;
+}
+
+@media(max-width: 1100px) {
+  .mission__text {
+    width: 60%;
+  }
+}
+@media(max-width: 992px) {
+  .mission {
+    padding: 60px 4%;
+  }
+  .mission__row {
+    flex-direction: column;
+  }
+  .mission__text {
+    width: 100%;
+  }
+  .mission__btn-parent {
+    width: 100%;
+    margin-top: 33px;
+  }
+}
+@media(max-width: 592px) {
+  .mission {
+    padding: 24px 4%;
+  }
+  .mission__text {
+    font-size: 20px;
+  }
+}
+
+.spring__row {
+  display: flex;
+  border: 2px solid red;
+  position: relative;
+}
+.spring__content {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+.spring__slider {
+  border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.spring__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 213px;
+  border: 2px solid green;
+}
+.spring__product-img {
+  width: 100%;
 }

@@ -21,14 +21,35 @@ $(".new-products__row").slick({
         slidesToScroll: 1,
       },
     },
-    // {
-    //   breakpoint: 480,
-    //   settings: {
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //   },
-    // },
   ],
+});
+
+
+$(".spring__slider").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  infinite: true,
+  slidesToScroll: 1,
+  nextArrow: ".spring__next-card",
+  prevArrow: ".spring__prev-card",
+  // responsive: [
+  //   {
+  //     breakpoint: 992,
+  //     settings: {
+  //       slidesToShow: 2,
+  //       slidesToScroll: 1,
+  //     },
+  //   },
+  //   {
+  //     breakpoint: 768,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1,
+  //     },
+  //   },
+  // ],
 });
 
 
