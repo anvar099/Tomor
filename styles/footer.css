@@ -1,0 +1,150 @@
+footer {
+  background: #000000;
+  position: relative;
+}
+.footer__container {
+  padding: 80px 4%;
+}
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+.footer__text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  width: 80%;
+}
+.footer__sign-up--title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 172.69%;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+}
+.footer__sign-up--text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  margin: 19px 0 16px 0;
+  font-size: 14px;
+  width: 80%;
+  line-height: 159.5%;
+}
+.footer__sign-up--email {
+  position: relative;
+}
+.footer__sign-up--email input {
+  background: transparent;
+  border: 1px solid #ffffff;
+  max-width: 328px;
+  opacity: 0.2;
+  width: 328px;
+  height: 58px;
+  padding-left: 16px;
+  color: white;
+}
+.footer__sign-up--email img {
+  position: absolute;
+  left: 28rem;
+  top: 40%;
+}
+.footer__social-media {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer__links {
+  display: flex;
+}
+.footer__links-container:not(:last-child) {
+  margin-right: 80px;
+}
+.footer__links--title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 172.69%;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+.footer__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 159.5%;
+  text-decoration: none;
+  color: white;
+}
+.footer__brand {
+  color: white;
+  position: absolute;
+  bottom: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 159.5%;
+  color: #ffffff;
+  opacity: 0.3;
+}
+@media(max-width: 1200px) {
+  .footer__sign-up {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .footer__row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__sign-up {
+    order: 2;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer__container {
+    padding: 40px 4%;
+  }
+  .footer__row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__text p {
+    width: 100%;
+    margin-bottom: -30px;
+    font-size: 16px;
+  }
+  .footer__sign-up--email input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer__sign-up--email img {
+    position: absolute;
+    left: 90%;
+    top: 40%;
+  }
+  .footer__sign-up {
+    order: 0;
+  }
+  .footer__links {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .footer__brand {
+  bottom: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+}
