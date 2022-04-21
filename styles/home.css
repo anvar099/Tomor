@@ -732,12 +732,12 @@
   margin: 8px 0 37px 0;
   text-transform: uppercase;
 }
+
 .designers__banner-img img {
   width: 100%;
 }
 .designers__banner {
   width: 100%;
-  margin: 0 10px;
   z-index: -1;
 }
 .designers__banner-name {
