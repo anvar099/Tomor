@@ -476,39 +476,122 @@
 
 .spring__row {
   display: flex;
-  border: 2px solid red;
+}
+.spring__container {
+  padding: 0 10%;
 }
 .spring__content {
   overflow-x: hidden !important;
-  width: 100%;
-  
+  width: 60%;
+  position: relative;
+}
+.spring__subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 172.69%;
+  text-align: center;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+.spring__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 8px 0 48px 0;
+}
+.spring__banner {
+  width: 40%;
 }
 .spring__slider {
-  border: 2px solid blue;
   display: flex;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
+  position: relative;
 }
 .spring__product {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid green;
   justify-content: center;
-  max-width: 213px;
-}
-.spring__product:not(:last-child) {
-  margin-left: 50px;
+  margin: 0 auto;
 }
 .spring__product-img {
-  max-width: 213px;
+  max-width: 245px;
   max-height: 270px;
   height: 100%;
-  border: 2px  solid red;
   width: 100%;
   margin: auto;
 }
-
+.spring__banner--img {
+  width: 100%;
+  max-height: 720px;
+  height: 100%;
+  object-fit: cover;
+}
+.spring__next,
+.spring__prev {
+  position: absolute;
+  cursor: pointer;
+  z-index: 99;
+}
+.spring__next {
+  right: 12%;
+  top: 40%;
+}
+.spring__prev {
+  left: 12%;
+  top: 40%;
+}
+@media (max-width: 768px) {
+  .spring__container {
+    padding: 0 10%;
+  }
+}
+@media (max-width: 768px) {
+  .spring__container {
+    padding: 0 4%;
+  }
+  .spring__title {
+    font-size: 32px;
+    margin: 8px 0 16px 0;
+  }
+  .spring__subtitle {
+    margin-top: 40px;
+  }
+  .spring__row {
+    flex-direction: column;
+  }
+  .spring__banner {
+    width: 100%;
+  }
+  .spring__content {
+    width: 100%;
+  }
+  .spring__slider {
+    width: 100%;
+  }
+  .spring__product {
+    max-width: unset;
+  }
+  .spring__next {
+    right: 2%;
+    top: 40%;
+  }
+  .spring__prev {
+    left: 2%;
+    top: 40%;
+  }
+  .spring__btn {
+    display: none;
+  }
+}
 /* Classic Scents */
 
 .classic-scents .swiper-slide {
@@ -602,6 +685,26 @@
   }
   .classic__subtitle {
     margin-top: 40px;
+  }
+}
+
+/* Floral  */
+.floral__row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.floral__slider {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .floral__row {
+    flex-direction: column;
+  }
+   .floral__slider {
+    width: 100%;
   }
 }
 /* Our Favorite Designers */

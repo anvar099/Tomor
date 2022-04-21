@@ -24,6 +24,26 @@ $(".new-products__row").slick({
   ],
 });
 
+$(".floral__slider").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  rows: 2,
+  infinite: true,
+  slidesToScroll: 1,
+  nextArrow: ".floral__next-card",
+  prevArrow: ".floral__prev-card",
+  responsive: [
+  {
+    breakpoint: 768,
+    settings: {
+      rows: 1,
+    },
+  },
+],
+});
+
 $(".spring__slider").slick({
   dots: false,
   infinite: true,
@@ -34,22 +54,14 @@ $(".spring__slider").slick({
   slidesToScroll: 1,
   nextArrow: ".spring__next-card",
   prevArrow: ".spring__prev-card",
-responsive: [
-  {
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        rows: 1,
+      },
     },
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    },
-  },
-],
+  ],
 });
 
 $(".designers__row").slick({
@@ -92,15 +104,3 @@ var swiperClassic = new Swiper(".swiperClassic", {
     },
   },
 });
-
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 3,
-//   grid: {
-//     rows: 2,
-//   },
-//   spaceBetween: 30,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
