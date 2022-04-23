@@ -58,13 +58,13 @@
 }
 
 .p__desc-title {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 29px;
-text-transform: uppercase;
-margin: 40px 0 8px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin: 40px 0 8px 0;
 }
 
 .padding {
@@ -87,34 +87,34 @@ margin: 40px 0 8px 0;
   margin-left: 6px;
 }
 .d__desc-name {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 159.5%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 159.5%;
 }
 .d__desc-size {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #CACACA;
+  border-bottom: 1px solid #cacaca;
   padding-bottom: 8px;
   margin-top: 24px;
 }
 .d__desc-size h4 {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
 }
 .p__desc-guide {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 159.5%;
-color: #000000;
-float: right;
-margin-top: 6px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 159.5%;
+  color: #000000;
+  float: right;
+  margin-top: 6px;
 }
 .p__desc-color {
   margin: 40px 0 8px 0;
@@ -124,22 +124,22 @@ margin-top: 6px;
 }
 .p__desc-btn {
   height: 45px;
-  background: #CACACA;
+  background: #cacaca;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 26px 0 40px 0;
 }
 .p__desc-btn a {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-text-decoration: none;
-line-height: 160%;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 160%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .p__desc-menu {
   display: flex;
@@ -147,22 +147,22 @@ color: #FFFFFF;
   margin-bottom: 20px;
 }
 .menu__link-description {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 159.5%;
-border-bottom: 1px solid #000000;
-padding-bottom: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 159.5%;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 4px;
 }
 .menu__link {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 159.5%;
-color: #000000;
-opacity: 0.3;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 159.5%;
+  color: #000000;
+  opacity: 0.3;
 }
 .p__desc-sustainable {
   border: 1px solid #f2f2f2;
@@ -171,11 +171,11 @@ opacity: 0.3;
   margin-top: 24px;
 }
 .p__desc-sustainable h3 {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 160%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
 }
 .sustainable__icons {
   display: flex;
@@ -188,17 +188,20 @@ line-height: 160%;
   font-weight: 400;
   line-height: 159.5%;
 }
-.p__desc-sustainable .p__desc-monthly{
+.p__desc-sustainable .p__desc-monthly {
   justify-content: center;
   margin-bottom: 26px;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .p__container {
-  flex-direction: column;
-  padding: 0 4%;
+    flex-direction: column;
+    padding: 0 4%;
   }
   .p__row-slider {
-  width: 100%;
+    width: 100%;
+  }
+  .p__desc-title {
+    font-size: 16px;
   }
   .vertical__slider {
     display: none;
@@ -210,17 +213,14 @@ line-height: 160%;
     width: 100%;
   }
   .swiper-button-next,
-.swiper-button-prev {
-  display: block;
+  .swiper-button-prev {
+    display: block;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
 }
-.swiper-button-next:after, .swiper-button-prev:after {
-  display: none;
-}
-}
-
-
-
-
 
 .s__products__contanier {
   position: relative;
