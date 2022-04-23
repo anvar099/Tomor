@@ -2,6 +2,23 @@
 @import url(./navigation.css);
 @import url(./footer.css);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .s__products__contanier {
   position: relative;
   padding: 0 4%;
@@ -28,27 +45,6 @@
 }
 .s__product-img {
   width: 100%;
-}
-.s__product-icons {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.s__product-icons img {
-  margin-right: 8px;
-}
-.s__product--new,
-.s__product--sale {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  font-size: 14px;
-  font-family: "Montserrat";
-  font-weight: 500;
-  color: #000000;
-}
-.s__product--sale {
-  color: red;
 }
 .s__product--like {
   position: absolute;
