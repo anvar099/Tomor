@@ -98,7 +98,7 @@
 
 .s__products-container {
   display: flex;
-}  
+}
 /* Filter Sort */
 .s__filter-sort {
   display: flex;
@@ -200,7 +200,8 @@
 .s__product-icons img {
   margin-right: 8px;
 }
-.s__product--new {
+.s__product--new,
+.s__product--sale {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -208,6 +209,9 @@
   font-family: "Montserrat";
   font-weight: 500;
   color: #000000;
+}
+.s__product--sale {
+  color: red;
 }
 .s__product--like {
   position: absolute;
@@ -246,4 +250,30 @@
 }
 .slick-dots li.slick-active button {
   border-bottom: 1px solid black;
+}
+.s__colors {
+  display: none;
+}
+@media (max-width: 768px) {
+  .s__accordion-container {
+    display: none;
+  }
+  .s__filter-sort {
+    justify-content: center;
+  }
+  .s__products {
+    width: 100%;
+  }
+  .s__colors {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  .slick-dots {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    float: unset;
+  }
 }
