@@ -250,3 +250,12 @@
     width: 100%;
   }
 }
+@media(max-width: 320px) {
+ .wishlist {
+    display: none;
+  }
+  .c__bonus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
